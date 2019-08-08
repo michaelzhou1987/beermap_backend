@@ -1,0 +1,6 @@
+{
+  "env": {
+    "MONGO_USER": "beermapAdmin123",
+    "MONGO_PASSWORD": "randomPassword123"
+  }
+}
