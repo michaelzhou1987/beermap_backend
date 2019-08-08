@@ -34,8 +34,11 @@ app.use('/graphql', graphqlHTTP({
 
 // mongodb
 const mongoose = require('mongoose');
+// mongoose.connect(
+//   `mongodb://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@149.28.246.217:27017/beermap`
+// );
 mongoose.connect(
-  `mongodb://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@149.28.246.217:27017/beermap`
+  `mongodb://beermapAdmin123:randomPassword123@149.28.246.217:27017/beermap`
 );
 mongoose.connection.once('open', ()=>{
   console.log('connected to database')
